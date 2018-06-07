@@ -7,6 +7,15 @@
 			{% endif %}
 			Community Of Coders
 		</title>
+
+		<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
 		<meta charset="utf-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,10 +56,33 @@
 
 	<body>
 		<!-- HEADER -->
+
+		 <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                     <a class="navbar-brand" href="index" data-toggle="tooltip" title="GO to COC Homepage"><img src="{{ url_for( "static" , filename="assets/images/2.png") }}"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Link 3<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Link 3.1</a></li>
+                            <li><a href="#">Link 3.2</a></li>
+                            <li><a href="#">Link 3.3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
 		<header class="row">
 			<div class="col-md-6">
 				<h1>
-					<a id="logo" href="/" data-toggle="tooltip" title="Go to COC homepage">Community of Coders</a>
 				</h1>
 			</div>
 		</header>
