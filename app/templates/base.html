@@ -102,9 +102,10 @@
 
 				<div class="social-media">
 					<center>
-					<span><i class="fa fa-facebook-official" style="font-size: 60px; color: #3B5998;"></i></span>&emsp;&emsp;&emsp;
-					<span><i class="fa fa-instagram" style="font-size: 60px; color: #fff;"></i></span>&emsp;&emsp;&emsp;
-					<span><i class="fa fa-twitter" style="font-size: 60px; color: #1DA1F2;"></i></span>
+					<span><a href="https://www.facebook.com/CommunityOfCoders/"><i class="fa fa-facebook-official" style="font-size: 60px; color: #3B5998;"></i></a></span>&emsp;&emsp;&emsp;
+					<span><a href="https://www.facebook.com/CommunityOfCoders/"><i class="fa fa-instagram" style="font-size: 60px; color: #fff;"></i></a></span>&emsp;&emsp;&emsp;
+					<span><a href="https://www.facebook.com/CommunityOfCoders/"><i class="fa fa-twitter" style="font-size: 60px; color: #1DA1F2;"></i></a></span>&emsp;&emsp;&emsp;
+					<span><a href="https://www.youtube.com/channel/UCiiLKnn8iU9Q31cByvtT_5w"><i class="fa fa-youtube-play" style="font-size: 60px; color: #FF0000;"></i></a></span>
 					</center>
 				</div>
 
@@ -116,29 +117,29 @@
 			</div>
 		</footer>
 
-{% with errorMessages = get_flashed_messages() %}
-{% if errorMessages %}
-<div class="modal fade" id="loginError" role="dialog">
-	<div class="modal-dialog">
-	<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<h4 class="modal-title">Error</h4>
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-			</div>
-			<div class="modal-body">
-				{% for error in errorMessages%}
-				<p style="text-align: center;">{{ error }}</p>
-				{% endfor %}
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		{% with errorMessages = get_flashed_messages() %}
+		{% if errorMessages %}
+		<div class="modal fade" id="loginError" role="dialog">
+			<div class="modal-dialog">
+			<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+					<h4 class="modal-title">Error</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					{% for error in errorMessages%}
+					<p style="text-align: center;">{{ error }}</p>
+					{% endfor %}
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
-{% endif %}
-{% endwith %}
+		{% endif %}
+		{% endwith %}
 
 	</body>
 </html>
