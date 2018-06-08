@@ -7,15 +7,6 @@
 			{% endif %}
 			Community Of Coders
 		</title>
-
-		<!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
 		<meta charset="utf-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,16 +15,20 @@
 		<link rel="shortcut icon" href="static/assets/images/favicon.ico" type="image/x-icon"/>
 
 		<!-- Local compiled Bootstrap styling library-->
-		<link rel="stylesheet" href="static/css/lib/bootstrap.css" />
+		<link rel="stylesheet" href="static/css/lib/bootstrap.css" /><!-- No lib folder in static/css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="static/css/base_layout.css">i
+		<link rel="stylesheet" href="static/css/base_layout.css">
 
 		<!-- Local compiled  JQuery library-->
 		<script type="text/javascript" src="static/js/lib/jquery.js"></script>
 
 		<!-- Local compiled Bootstrap javascript library-->
 		<script type="text/javascript" src="static/js/lib/bootstrap.js"></script>
+
+		<!-- popper js file link -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
 		{% block headIncludes %}{% endblock %}
 		
@@ -57,26 +52,22 @@
 	<body>
 		<!-- HEADER -->
 
-		 <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                     <a class="navbar-brand" href="index" data-toggle="tooltip" title="GO to COC Homepage"><img src="{{ url_for( "static" , filename="assets/images/2.png") }}"></a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Link1</a></li>
-                    <li><a href="#">Link2</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Link 3<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Link 3.1</a></li>
-                            <li><a href="#">Link 3.2</a></li>
-                            <li><a href="#">Link 3.3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
+		<!--Navigation-->
+
+		 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="index">COC Logo Here</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+      				<li class="nav-item active">
+        				<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#">About</a>
+      				</li>
+            	</ul>
             </div>
         </nav>
 
