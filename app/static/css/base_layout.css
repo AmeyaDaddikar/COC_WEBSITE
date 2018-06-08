@@ -1,0 +1,12 @@
+body{
+	background: #000;
+}
+
+.carousel-item img{
+	width: 100%;
+	height: 50vh;
+}
+
+.social-media{
+align-self: center;
+}
